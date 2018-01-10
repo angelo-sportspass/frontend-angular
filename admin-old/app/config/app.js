@@ -64,7 +64,7 @@
 								url: '/manage-tile',
 								views: {
 									'content@dashboard' : {
-										templateUrl: 'app/layout/content_tile_man.html'
+										templateUrl: 'app/layout/content_tile_manage.html'
 									}
 								},
 						})
