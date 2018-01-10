@@ -25,13 +25,13 @@
       <div class="menu_section">
         <h3>General</h3>
         <ul class="nav side-menu">
-          <li><a><i class="fa fa-home"></i> Home </span></a></li>
-          <li><a><i class="fa fa-edit"></i> Manage Club </a></li>
-          <li><a><i class="fa fa-desktop"></i> Manage Members </a></li>
+          <li><a ui-sref="dashboard"><i class="fa fa-home"></i> Home </span></a></li>
+          <li><a ui-sref=".manage_club"><i class="fa fa-edit"></i> Manage Club </a></li>
+          <li><a ui-sref=".manage_members"><i class="fa fa-desktop"></i> Manage Members </a></li>
           <li><a><i class="fa fa-table"></i> SportsPass Tile <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="tables.html">Tile Categories</a></li>
-              <li><a href="tables_dynamic.html">Tiles</a></li>
+              <li><a ui-sref=".tile_cat">Tile Categories</a></li>
+              <li><a ui-sref=".tile_man">Tiles</a></li>
             </ul>
           </li>
         </ul>

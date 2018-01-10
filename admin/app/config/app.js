@@ -6,7 +6,7 @@
 		'ui.router'
 	])
 
-	.config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
+	.config(function ($stateProvider, $urlRouterProvider) {
 
 		$urlRouterProvider
 	    .when('', '/dashboard')
@@ -31,8 +31,44 @@
                   templateUrl: 'app/layout/footer.html'
                 }
               },
-            });
-	
+            })
+
+						.state('dashboard.manage_club', {
+				        url: '/manage-club',
+								views: {
+									'content@dashboard' : {
+				        		templateUrl: 'app/layout/content_manage_club.html'
+									}
+								},
+				    })
+
+						.state('dashboard.manage_members', {
+				        url: '/manage-members',
+								views: {
+									'content@dashboard' : {
+				        		templateUrl: 'app/layout/content_manage_members.html'
+									}
+								},
+				    })
+
+						.state('dashboard.tile_cat', {
+				        url: '/manage-tile-categories',
+								views: {
+									'content@dashboard' : {
+				        		templateUrl: 'app/layout/content_tile_cat.html'
+									}
+								},
+				    })
+
+						.state('dashboard.tile_man', {
+								url: '/manage-tile',
+								views: {
+									'content@dashboard' : {
+										templateUrl: 'app/layout/content_tile_man.html'
+									}
+								},
+						})
+
 	})
 	.run(function ($rootScope, $state, $location) {
 		//console.log($location);

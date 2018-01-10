@@ -9,7 +9,7 @@
   .controller('pageNotFoundCtrl', pageNotFoundCtrl);
 
 
-  // clusterMgmtAppCtrl.$inject = ['$scope'];
+  clusterMgmtAppCtrl.$inject = ['$scope'];
   layoutHeaderCtrl.$inject = ['$scope'];
   layoutSidebarCtrl.$inject = ['$scope', '$state', '$stateParams'];
   layoutContentCtrl.$inject = ['$scope', '$rootScope'];
