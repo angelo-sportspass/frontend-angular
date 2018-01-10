@@ -32,8 +32,7 @@
                 }
               },
             });
-						// use the HTML5 History API
-			 $httpProvider.html5Mode(true);
+	
 	})
 	.run(function ($rootScope, $state, $location) {
 		//console.log($location);
